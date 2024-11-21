@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon from google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=support_agent"
+    />
+    <script src="contact.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-nav">
+        <a href="../index.html"><img src="../assets/img/aigen-logo.png" alt="logo" /></a>
+        <a href="../index.html">Home</a>
+        <a href="./blog/index.html">Blog</a>
+      </div>
+      <div class="right-nav">
+        <a href="#" type="button">Contact Me</a>
+        <a href="#" class="icon">
+          <span class="material-symbols-outlined"> support_agent </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <center>
+      <div class="image">
+        <img src="../assets/img/aigenlogoblack.png" alt="logo" width="200px" />
+      </div>
+    </center>
+
+    <div class="form-container">
+      <form method="post">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Masukkan nama" id="name" /> <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" /> <br />
+        <label for="Gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="unknown">unknown</option>
+          <option value="laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+        <br />
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Masukkan Subject" /><br />
+        <label for="description">Message</label>
+        <textarea name="description" id="description" rows="5" cols="40"></textarea>
+        <div class="send-email">
+          <button type="button" onclick="sendEmail()">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
